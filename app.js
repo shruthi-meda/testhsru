@@ -88,6 +88,12 @@ initDBConnection();
 
 app.get('/', routes.index);
 
+app.get('/test', function(req, res){
+	
+	res.write('Test api called.');
+	res.end();
+});
+
 function createResponseData(id, name, value, attachments) {
 
 	var responseData = {
