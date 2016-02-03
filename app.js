@@ -90,7 +90,7 @@ app.get('/', routes.index);
 
 app.get('/test', function(req, res){
 	
-	res.write('Test api called.');
+	res.write('Test api called again.');
 	res.end();
 });
 
